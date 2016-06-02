@@ -92,7 +92,7 @@ describe FastlaneCore do
         end
       end
 
-      describe "use_shell_script is false with a dev portal team ID set" do
+      describe "use_shell_script is false with a itc_provider short name set" do
         describe "upload command generation" do
           it 'generates a call to java directly' do
             transporter = FastlaneCore::ItunesTransporter.new('fabric.devtools@gmail.com', "!> p@$s_-+=w'o%rd\"&#*<", false, 'abcd1234')
@@ -108,7 +108,7 @@ describe FastlaneCore do
         end
       end
 
-      describe "use_shell_script is true with a dev portal team ID set" do
+      describe "use_shell_script is true with a itc_provider short name set" do
         describe "upload command generation" do
           it 'generates a call to java directly' do
             transporter = FastlaneCore::ItunesTransporter.new('fabric.devtools@gmail.com', "!> p@$s_-+=w'o%rd\"&#*<", true, 'abcd1234')
